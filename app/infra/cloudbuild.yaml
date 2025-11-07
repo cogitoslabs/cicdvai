@@ -2,7 +2,7 @@ steps:
   # 1️⃣ Terraform Plan & Apply (Infra)
   - name: 'hashicorp/terraform:1.6.0'
     id: 'terraform'
-    entrypoint: 'bash'
+    entrypoint: 'sh'
     args:
       - '-c'
       - |
