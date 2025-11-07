@@ -8,13 +8,13 @@ terraform {
 locals {
   config_env = {
     for line in split("\n", file("${path.module}/../../config.env")) :
-    split("=", line)[0] => trim(replace(split("=", line)[1], "\"", ""))
+    split("=", line)[0] => trimspace(replace(split("=", line)[1], "\"", ""))
     if length(line) > 0 && can(split("=", line)[1])
   }
 
   bootstrap_env = {
     for line in split("\n", file("${path.module}/../../bootstrap_outputs.env")) :
-    split("=", line)[0] => trim(replace(split("=", line)[1], "\"", ""))
+    split("=", line)[0] => trimspace(replace(split("=", line)[1], "\"", ""))
     if length(line) > 0 && can(split("=", line)[1])
   }
 
