@@ -43,7 +43,8 @@ locals {
     "cloudbuild.googleapis.com",
     "artifactregistry.googleapis.com",
     "iam.googleapis.com",
-    "compute.googleapis.com"
+    "compute.googleapis.com",
+    "cloudbilling.googleapis.com"  # Added Cloud Billing API
   ]
 }
 
