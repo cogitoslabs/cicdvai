@@ -1,4 +1,4 @@
-# GCP Modular Infrastructure Setup
+# GCP Modular Infrastructure Setup Template
 
 This repository provides a reusable, fully automated GCP setup using Terraform and Cloud Build.
 It separates the **Bootstrap Project** (infrastructure and CI/CD setup) from **Application Projects** (created automatically per app).
